@@ -1,0 +1,476 @@
+					/***** fonts *****/
+					
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Kaushan+Script&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nova+Flat&family=Redressed&family=Rowdies:wght@300;400;700&family=Share+Tech&family=Share+Tech+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Kaushan+Script&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nova+Flat&family=Redressed&family=Rowdies:wght@300;400;700&family=Share+Tech&family=Share+Tech+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&family=Redressed&family=Rowdies:wght@300;400;700&family=Share+Tech&family=Share+Tech+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Carter+One&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Rowdies:wght@300;400;700&family=Share+Tech&family=Share+Tech+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Rowdies:wght@300;400;700&display=swap');
+
+					/***** end fonts *****/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	letter-spacing: 2px;
+	font-size: 18px;
+	background: black;
+	font-family: 'League Spartan', sans-serif;
+    background: -o-linear-gradient(290.78deg, #7146d0 50%, #6570f5 27.96%);
+    background: linear-gradient(-120.22deg, #7146d0 50%, #6570f5 27.96%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	color: aqua;
+	font-family: 'Share Tech', sans-serif;
+	padding: 20px 0px;
+}
+
+p {
+	font-weight: 500;
+	color: #fff;
+	font-size: 18px;
+}
+
+i	{
+	color: orange;
+}
+
+.btn {
+	font-weight: 700;
+	letter-spacing: 3px;
+	font-family: 'Nova Flat', cursive;
+}
+
+			/*** section ***/
+section {
+	text-align: center;
+}
+
+.reveal{
+	position: relative;
+	transform: translateY(150px);
+	opacity: 0;
+	transition: 1s all ease;
+}
+
+.reveal.active{
+	transform: translateY(0);
+	opacity: 1;
+}
+			/*** end section ***/
+
+.bgText {
+	color: #fcfffc17;
+	font-size: 50px;
+	margin-bottom: -70px;
+	font-family: nova flat;
+}
+
+					/***** top button *****/
+					
+#topBtn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 10px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	font-size: 30px;
+}
+					
+					/***** end top button *****/
+					
+					/***** navbar *****/
+
+.navbar {
+	background: #000000c7;
+}
+
+.navbar-brand {
+	font-family: 'Kaushan Script', cursive;
+}
+
+.navbar-dark .navbar-nav .nav-link	{
+	color: white;
+}
+
+	.navbar-dark .navbar-nav .nav-link:hover {
+		color: aqua;
+		transform: scale(0.9);
+		transition: all .5s;
+	}
+	
+	.navbar-dark .navbar-nav .nav-link:hover> i {
+		color: aqua;
+		transform: scale(0.9);
+		transition: all .5s;
+	}
+	
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+nav ul li a {
+  position:relative;
+  z-index: 1;
+}
+nav ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 95%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #ffffff54;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+nav ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+					/***** end navbar *****/
+
+					/***** hero *****/
+
+.hero {
+	background: linear-gradient(#000000b5, #000000b5), url(..//img/mainbg.jpg) fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	padding: 50px 0px 0px 0px;
+	margin: 0px;
+	text-align: center;
+}
+
+.social {
+	margin: 50px 0px;
+}
+
+.social a {
+	padding: 5px;
+	margin: 0px 5px;
+	font-size: 30px;
+}
+
+	.social a i:hover {
+		color: aqua !important;
+		transform: scale(1.2);
+	}
+
+.hireBtn {
+    position: relative;
+    display: inline-flex;
+    background: black;
+    overflow: hidden;
+    transition: 0.7;
+}
+
+	.hireBtn:hover {
+		border: 1px solid aqua;
+	}
+	
+.hireBtn b {
+    display: inline-block;
+    font-size: 20px;
+    word-spacing: 1px;
+    color: black;
+    z-index: 10;
+    transition: 0.7;
+}
+
+.button-overlay-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 51%;
+    background: aqua;
+    transition: 0.4s;
+}
+
+.button-overlay-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 51%;
+    background: aqua;
+    transition: 0.4s;
+}
+
+	.hireBtn:hover > b {
+		
+		color: aqua;
+	}
+
+	.hireBtn:hover > .button-overlay-1 {
+		visibility: visible;
+		left: -51%;
+	}
+
+	.hireBtn:hover > .button-overlay-2 {
+		visibility: visible;
+		right: -51%;
+	}
+
+#hire {
+	padding: 15px;
+	width: 150px;
+	height: 80px;
+	margin: auto;
+	text-align: center;
+}
+
+#hire i {
+	font-size: 40px;
+	float: left;
+	color: #fd3c95;
+	padding: 0px 10px;
+}
+
+	#hire i:hover {
+		color: #1ad978;
+		transform: scale(1.2);
+	}
+					
+					/***** end hero *****/
+					
+					/***** skill *****/
+
+#skill {
+	padding: 10px;
+}
+
+.fancy {	
+	padding: 15px;
+	box-shadow: rgba(100, 200, 250, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+	border-radius: 100% 50% 100% 50%;
+}
+
+.counter-Txt {
+	text-align:  center; 
+	font-family: 'Carter One', cursive;
+	font-size: 25px; 
+	font-weight: 500; 
+	text-transform: uppercase; 
+	color: #fff;
+}
+
+	.counter-Txt i {
+		font-size: 50px;
+		color: #FD3C95;
+	}
+
+.counter-Txt span {
+	font-size: 50px;
+	color: aqua;
+}
+@media(min-width:320px) and (max-width:767px) { 
+.c-no {
+	height: 100%;
+}
+
+.counter-Txt {
+	margin-top: 35px;
+}
+
+.margin-bot-35 {
+	margin-bottom: 35px;
+}
+}
+
+					/***** end skill *****/
+					
+					/***** service *****/
+
+#services {
+	background: #ffffff1a;
+}
+
+#services .card {
+	padding: 50px 10px;
+	margin: auto;
+	height: 430px;
+	background: #ffffff12;
+}
+					
+#services i {
+	font-size: 50px;
+	color: #f2f2f2;
+}
+
+/* icon size */
+	#services b.fas.fa-pen-ruler {
+		font-size: 30px !important;
+		margin-left: -32px;
+	}
+	
+	#services b.fas.fa-mobile-alt {
+		font-size: 30px !important;
+		margin-left: -24px;
+	}
+	
+	#services b.fas.fa-gear {
+		font-size: 30px !important;
+		margin-left: -15px;
+	}
+/* end icon size */
+
+#services h3 {
+	margin-top: 20px;
+	font-family: nova flat;
+	font-size: 25px;
+	color: lime;
+}
+
+#services p {
+	color: #f2f2f2;
+}
+
+	#services .card:hover {
+		transform: scale(0.95);
+		border: 1px solid lime;
+	}
+	
+	#services .card:hover> i {
+		color: orange;
+		transform: scale(1.5);
+	}
+	
+	#services .card:hover> h3 {
+		color: black;
+	}
+	
+.imgcontainer {
+	position: relative;
+	width: 100%;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #00000090;
+	border-radius: 100%;
+}
+
+.imgcontainer:hover .overlay {
+	opacity: 1;
+}
+
+.text {
+	color: white;
+	font-size: 25px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+					/***** end service *****/
+					
+					/***** portfolio *****/
+					
+#portfolio b	{
+	color: white;
+	font-size: 20px;
+}
+
+#portfolio .item	{
+	padding: 30px;
+}
+					
+					/***** end portfolio *****/	
+					
+					/***** footer *****/
+									
+.footer {
+	padding: 50px 0px;
+	color: #fff;
+	background: #00000047;
+}
+
+.footer .contact {
+	text-align: left;
+	line-height: 3;
+}
+
+.footer .contact i {
+	font-size: 30px;
+}
+
+.footer .contact a:hover {
+	padding: 10px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+	border-radius: 10px;
+}
+
+.links	{
+	text-align: left;
+	padding: 40px;
+}
+	
+	.links i	{
+		color: orange; 
+		font-size: 30px;
+	}
+	
+	.links a	{
+		text-decoration: none;
+		color: white;
+	}
+	
+		.links a:hover	{
+		text-decoration: underline;
+		color: aqua;
+		transform: scale(1.1);
+		}
+
+.footer .follow i {
+	font-size: 30px;
+	padding: 0px 5px;
+	color: orange;
+	margin-top: 50px;
+}
+
+	.footer .follow i:hover {
+		color: #e29405;
+		transform: scale(0.9);
+	}
+
+.footer .copyright {
+	margin-top: 50px;
+	color: aqua;
+	font-weight: 400;
+}
+					
+					/***** end footer *****/
